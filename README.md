@@ -12,16 +12,15 @@ SSAFY (구) 6반 알고리즘 스터디 B조 **`주간 과제`** 올려두는 �
 - 1문제씩 commit할 경우
 
 ```
-commit -m 'Feat: Solve [Boj-1935] JiHwan"
-commit -m "Fix: Fixed [Boj-1935] JiHwan"
-
+git commit -m "Feat: Solve [Week_1-1] JiHwan"
+git commit -m "Fix: Fixed [Week_1-2] JiHwan"
 ```
 
 - 여러 문제를 한꺼번에 commit할 경우
 
 ```
-commit -m "Feat: Solve [Boj-1935, 1158, 3190] JiHwan"
-commit -m "Fix: Fixed [Boj-1935, 1158, 3190] JiHwan"
+git commit -m "Feat: Solve [Week_1-1, 1-2] JiHwan"
+commit -m "Fix: Fixed [Week_1-1, 1-2, 2-2] JiHwan"
 ```
 
 ## 일정표
