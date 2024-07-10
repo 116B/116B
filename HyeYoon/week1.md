@@ -137,3 +137,54 @@ class Solution {
 ```
 
 따라서, `[1, 1]`에서 `[3, 3]`까지 5가 더해진 최종 배열을 얻을 수 있습니다. 이 방식은 각 업데이트를 O(1) 시간에 수행하고, 전체 배열의 누적 합을 계산하는 데 O(N \* M) 시간을 소요
+
+## 양과 늑대
+
+노드 개수는 정해져 있고, 연결 개수는 정해져있지 않으므로 List<Integer>[] 사용
+
+```java
+List<Integer>[] graph = new ArrayList[info.length];
+```
+
+dfs 를 위한 초기화
+
+경로 기록 (길이를 지정할 수 없으므로 List<Integer>)
+
+```java
+boolean[] visited = new boolean[info.length];
+visited[0] = true;
+
+List<Integer> path = new ArrayList<>();
+path.add(0);
+```
+
+dfs 함수 구성
+
+```java
+ dfs(graph, info, visited, 0, 1, 0, path);
+ void dfs(List<Integer>[] graph, int[] info, boolean[] visited, int node, int sheep, int wolf, List<Integer> path)
+```
+
+```java
+for (int current : currentPath) {
+        for (int next : graph[current]) {
+            if (!visited[next]) {
+                // 방문처리
+                visited[next] = true;
+                path.add(next);
+
+                if (info[next] == 0) { // 1) 양
+                    dfs(graph, info, visited, next, sheep + 1, wolf, path);
+                } else { // 늑대
+                    if (sheep > wolf + 1) { // 양이 더 많을 때만 진행
+                        dfs(graph, info, visited, next, sheep, wolf + 1, path);
+                    }
+                }
+
+                // 원상복구 (백트랙킹)
+                path.remove(path.size() - 1);
+                visited[next] = false;
+            }
+        }
+    }
+```
