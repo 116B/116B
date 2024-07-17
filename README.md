@@ -28,5 +28,6 @@ commit -m "Fix: Fixed [Week_1-1, 1-2, 2-2] JiHwan"
 | **주차** | **주제**          | **문제 1**                                                   | **문제 2**                                                   | **진행 현황** |
 | -------- | ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------- |
 | 1주차    | 2022 KAKAO BLIND RECRUITMENT | [파괴되지 않은 건물 LV.3](https://school.programmers.co.kr/learn/courses/30/lessons/92344) |  [양과 늑대 LV.3](https://school.programmers.co.kr/learn/courses/30/lessons/92343) | `진행 완료`   |
-| 2주차    | 2023 현대모비스 알고리즘 경진대회 예선 | [상담원 인원 Lv.3](https://school.programmers.co.kr/learn/courses/30/lessons/214288) | [달이 차오른다, 가자. Gold_1](https://www.acmicpc.net/problem/1194) | `진행 중`   |
+| 2주차    | 2023 현대모비스 알고리즘 경진대회 예선 | [상담원 인원 Lv.3](https://school.programmers.co.kr/learn/courses/30/lessons/214288) | [달이 차오른다, 가자. Gold_1](https://www.acmicpc.net/problem/1194) | `진행 완료`   |
+| 3주차    | 2023 KAKAO BLIND RECRUITMENT | [표 병합 Lv.3](https://school.programmers.co.kr/learn/courses/30/lessons/150366) | [트리의 지름 Gold_2](https://www.acmicpc.net/problem/1167) | `진행 중`   |
 
