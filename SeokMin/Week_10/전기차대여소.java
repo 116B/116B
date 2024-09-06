@@ -18,7 +18,7 @@ class Solution
         int Q = sc.nextInt();
 
         boolean okay = false;
-
+ 
         for (int q = 0; q < Q; ++q)
         {
             int cmd = sc.nextInt();
