@@ -94,7 +94,7 @@ class UserSolution
             this.R = R;
             this.C = C;
         }
-    }	// Station
+    }	// Station 
 
     class Node implements Comparable<Node> {
         int ID, len;
