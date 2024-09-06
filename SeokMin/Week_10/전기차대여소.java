@@ -86,9 +86,9 @@ class Solution
 
 class UserSolution
 {
-
     class Station {
         int ID, R, C;
+        
         public Station(int ID, int R, int C) {
             this.ID = ID;
             this.R = R;
@@ -98,6 +98,7 @@ class UserSolution
 
     class Node implements Comparable<Node> {
         int ID, len;
+        
         public Node(int ID, int len) {
             this.ID = ID;
             this.len = len;
@@ -183,7 +184,7 @@ class UserSolution
         queue = new LinkedList<>();
         boolean[][] visited = new boolean[N][N];
 
-        queue.offer(new int[]{mRow, mCol, 0});
+        queue.add(new int[]{mRow, mCol, 0});
         visited[mRow][mCol] = true;
 
         while (!queue.isEmpty()) {
@@ -192,19 +193,24 @@ class UserSolution
             int c = curr[1];
             int dist = curr[2];
 
-            if (dist > mRange) continue;
+            // 이동 가능 거리를 벗어난 경우
+            if (dist > mRange)
+            	continue;
 
+            // 충전소인 경우
             if (elecStation[r][c] != null && elecStation[r][c].ID != mID) {
-                int targetID = elecStation[r][c].ID;
-                nodes[mID].add(new Node(targetID, dist));
-                nodes[targetID].add(new Node(mID, dist));
+                int toID = elecStation[r][c].ID;
+                nodes[mID].add(new Node(toID, dist));
+                nodes[toID].add(new Node(mID, dist));
             }
 
             for (int i = 0; i < 4; i++) {
-                int nr = r + dr[i], nc = c + dc[i];
+                int nr = r + dr[i];
+                int nc = c + dc[i];
+                
                 if (nr >= 0 && nr < N && nc >= 0 && nc < N && !visited[nr][nc] && mMap[nr][nc] != 1) {
                     visited[nr][nc] = true;
-                    queue.offer(new int[]{nr, nc, dist + 1});
+                    queue.add(new int[]{nr, nc, dist + 1});
                 }
             }
         }
