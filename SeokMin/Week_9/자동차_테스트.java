@@ -25,7 +25,7 @@ public class 자동차_테스트 {
 			arr.add(Integer.parseInt(st.nextToken()));
 		
 		Collections.sort(arr);
-		for (int i = 0; i < q; i++) {
+	for (int i = 0; i < q; i++) {
             int pre = 0;
             int pos = 0;
             int idx = 0;
