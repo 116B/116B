@@ -43,7 +43,7 @@ class UserSolution {
 		int left = 0;
 		int right = max;
 		
-		while (left < right) {
+		while (left < right) { 
 			int mid = (left + right) / 2;
 			
 			if (Solution2.checkCards(0, index, mid)) {	// 0번째 숫자와 index번째 숫자의 차이가 mid보다 작거나 같은 경우
