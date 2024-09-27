@@ -3,7 +3,6 @@ import java.util.*;
 public class b14725 {
 
     static TreeSet<Node> treeSet;
-    static Map<String, Node> nodeMap = new HashMap<>();
 
     static class Node {
 
@@ -45,9 +44,6 @@ public class b14725 {
             int num = sc.nextInt(); //지나가는 노드 개수
 
             String s = sc.next(); // 루트노드
-
-            Node node = nodeMap.getOrDefault(s, new Node(s));
-            nodeMap.put(s, node);
             treeSet.add(node);
 
             for (int j = 1; j < num; j++) {
