@@ -41,4 +41,4 @@ commit -m "Fix: Fixed [Week_1-1, 1-2, 2-2] JiHwan"
 | 12주차    | 2021 KAKAO | [매출 하락 최소화](https://school.programmers.co.kr/learn/courses/30/lessons/72416) | | | `진행 완료` |
 | 13주차    | 트라이(Trie) | [에어컨 2023 현대모비스 알고리즘 경진대회 예선](https://www.acmicpc.net/problem/14725) |  [IP 주소 Gold 3](https://www.acmicpc.net/problem/2064) | [IP 주소 Gold 3](https://www.acmicpc.net/problem/2064) | `진행 완료` |
 | 14주차    | 다익스트라(Dijkstra) | [네트워크 복구 Gold 2](https://www.acmicpc.net/problem/2211) | | | `진행 완료` |
-| 15주차    | 현대 오토에버 준비 |에어컨 Lv.3](https://school.programmers.co.kr/learn/courses/30/lessons/214289) | [현대 모비스 자율 주행 시스템 Gold 2](https://www.acmicpc.net/problem/25969) | [현대 모비스 에어 서스펜션 Gold 2](https://www.acmicpc.net/problem/25970) | `진행 중` |
+| 15주차    | 현대 오토에버 준비 |[에어컨 Lv.3](https://school.programmers.co.kr/learn/courses/30/lessons/214289) | [현대 모비스 자율 주행 시스템 Gold 2](https://www.acmicpc.net/problem/25969) | [현대 모비스 에어 서스펜션 Gold 2](https://www.acmicpc.net/problem/25970) | `진행 중` |
